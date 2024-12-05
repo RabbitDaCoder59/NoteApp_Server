@@ -46,16 +46,27 @@ This document provides an overview of the backend implementation for the Notes A
 ## Folder Structure
 
 ```plaintext
-├── models                # Database models
-│   ├── index.js          # Sequelize initialization
-│   ├── Notes.js          # Notes model
-│   ├── Users.js          # Users model
-├── routes                # API routes
-│   ├── Notes.js          # Notes CRUD routes
-│   ├── Users.js          # User authentication routes
-├── uploads               # Directory for uploaded files
-├── .env                  # Environment variables
-├── server.js             # Main server file
+notapp_server/
+├── config/
+│   └── config.json
+├── middlewares/
+│   ├── AuthMiddleware.js
+│   └── upload.js
+├── models/
+│   ├── index.js
+│   ├── Notes.js
+│   └── Users.js
+├── routes/
+│   ├── Notes.js
+│   └── Users.js
+├── uploads/
+│   └── profileImage-[filename]
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── server.js
+└── .env
+
 ```
 
 ---
